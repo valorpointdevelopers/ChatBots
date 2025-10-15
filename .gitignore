@@ -7,7 +7,6 @@ npm-debug.log
 **_IGNORE_**
 /flow-json
 /contacts
-/client/public/media
 /sessions
 # end managed
 conversations/
