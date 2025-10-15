@@ -20,6 +20,9 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(fileUpload());
 
+//Permite guardar las imagenes
+app.use('/media', express.static(path.resolve(__dirname, "./client/public/media")));
+
 // Definición de rutas
 const adminRoute = require('./routes/admin');
 app.use('/api/admin', adminRoute);
